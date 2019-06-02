@@ -1,4 +1,4 @@
-package br.com.huberhack.mobway_uberhack.splash;
+package br.com.huberhack.mobway_uberhack.disclaimer;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,18 +10,17 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import br.com.huberhack.mobway_uberhack.R;
-import br.com.huberhack.mobway_uberhack.disclaimer.ChoosePathActivity;
 
-public class SplashActivity extends AppCompatActivity {
+public class ChoosePathActivity extends AppCompatActivity {
 
     private Timer timer = new Timer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_choose_path);
 
-        ImageView imageViewLogo = findViewById(R.id.imageViewLogo);
+        ImageView imageViewLogo = findViewById(R.id.imageViewChoosePath);
 
         imageViewLogo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void jump() {
         timer.cancel();
-        Intent intent = new Intent(SplashActivity.this, ChoosePathActivity.class);
+        Intent intent = new Intent(ChoosePathActivity.this, FindProblemActivity.class);
         startActivity(intent);
         finish();
     }
