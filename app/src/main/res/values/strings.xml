@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MobWay_UberHack</string>
     <string name="logo">Logo</string>
+    <string name="find_problems">Descubra os problemas</string>
+    <string name="choose_path">Selecione o caminho</string>
+    <string name="report_problem">Denuncie</string>
 </resources>
